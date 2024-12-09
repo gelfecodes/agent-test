@@ -4,7 +4,7 @@ import simpleGit from "simple-git";
 import random from "random";
 
 const path = "./data.json";
-
+console.log("modified something now")
 const markCommit = (x, y) => {
   const date = moment()
     .subtract(1, "y")
