@@ -76,11 +76,5 @@ const makeCommits = (n) => {
       .commit(date, { "--date": date }, () => makeCommits(--n));
   });
 };
-
-// const git = simpleGit().outputHandler((command, stdout, stderr) => {
-//   console.log(`Running command: ${command}`);
-//   stdout.pipe(process.stdout);
-//   stderr.pipe(process.stderr);
-// });
 console.log("Starting commits");
-makeCommits(100);
+makeCommits(300);
