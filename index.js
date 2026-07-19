@@ -74,8 +74,10 @@ const makeCommits = (n) => {
     simpleGit()
       .add([path])
       .commit(date, { "--date": date }, () => makeCommits(--n));
+
   });
 };
 
 console.log("Starting commits");
+
 makeCommits(500);
